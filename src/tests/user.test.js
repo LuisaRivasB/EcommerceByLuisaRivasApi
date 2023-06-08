@@ -54,8 +54,6 @@ test('PUT /users/:id', async () => {
     expect(res.body.firstName).toBe(userUpdated.firstName);    
 });
 
-
-
 test('POST /users/login with invalid credentials should throw an error', async () => {
     const credentials = {
         email: "luis@academlo.com",

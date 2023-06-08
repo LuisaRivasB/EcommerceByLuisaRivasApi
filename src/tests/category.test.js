@@ -46,7 +46,6 @@ test('PUT /categories/:id', async () => {
     expect(res.body.name).toBe(categoriesUpdated.name);    
 });
 
-
 test('DELETE /categories/:id', async () => { 
     const res = await request(app)
     .delete(`/categories/${categoryId}`)
